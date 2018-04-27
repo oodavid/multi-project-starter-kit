@@ -1,0 +1,33 @@
+{
+  "name": "css-framework",
+  "version": "1.0.0",
+  "description": "Build a CSS Framework From Scratch",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oodavid/css-framework.git"
+  },
+  "keywords": [
+    "CSS",
+    "Framework",
+    "Tutorial",
+    "Bootstrap"
+  ],
+  "author": "David King",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oodavid/css-framework/issues"
+  },
+  "homepage": "https://github.com/oodavid/css-framework#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.7",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglifycss": "^1.0.9",
+    "run-sequence": "^2.2.1"
+  }
+}
