@@ -22,12 +22,16 @@
   "devDependencies": {
     "browser-sync": "^2.23.7",
     "del": "^3.0.0",
+    "glob": "^7.1.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-newer": "^1.4.0",
+    "gulp-prompt": "^1.0.1",
+    "gulp-replace": "^0.6.1",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglifycss": "^1.0.9",
-    "run-sequence": "^2.2.1"
+    "run-sequence": "^2.2.1",
+    "yargs": "^11.0.0"
   }
 }

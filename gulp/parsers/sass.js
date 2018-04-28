@@ -6,7 +6,10 @@ var uglify = require('gulp-uglifycss');
 
 
 
-var src = 'src/**/*.scss';
+var opts = {
+  cwd: global.config.cwd,
+};
+var src = '**/*.scss';
 var dest = 'build/';
 
 
@@ -25,7 +28,7 @@ var sassOptions = {
 // BUILD
 gulp.task('sass-build', function () {
   return gulp
-    .src(src)
+    .src(src, opts)
     // Transform
     .pipe(sass(sassOptions).on('error', sass.logError))
     .pipe(autoprefixer(autoprefixerOptions))
@@ -38,14 +41,14 @@ gulp.task('sass-build', function () {
 
 // WATCH
 gulp.task('sass-watch', function () {
-  gulp.watch(src, ['sass-watch-stream']); // Note that this watches ALL scss files
-  return createWatchStream();
+  gulp.watch(src, opts, ['sass-watch-stream']); // Note that this watches ALL scss files
+  return getWatchStream();
 });
-gulp.task('sass-watch-stream', createWatchStream);
+gulp.task('sass-watch-stream', getWatchStream);
 
-function createWatchStream(){
+function getWatchStream(){
   return gulp
-    .src(src)
+    .src(src, opts)
     .pipe(sourcemaps.init())
     // Transform
     .pipe(sass(sassOptions).on('error', sass.logError))
