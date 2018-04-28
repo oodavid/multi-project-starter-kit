@@ -6,17 +6,16 @@ require('./tasks/clean.js');
 require('./tasks/env.js');
 require('./tasks/sass.js');
 require('./tasks/static.js');
-require('./tasks/browsersync.js');
 
 
-gulp.task('develop', function (done) {
+gulp.task('build', function (done) {
   return runSequence(
     'clean',
     'env',
     [
-      'sass-watch',
-      'static-watch'
+      'sass-build',
+      'static-build'
     ],
-    'browsersync'
+    done
   );
 });

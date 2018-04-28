@@ -1,11 +1,8 @@
-# Build a CSS Framework From Scratch
+# Multi-Project Build System
 
 
 # Setup Browsersync, SASS and Gulp
 
-Sources
-
-* https://browsersync.io/docs/gulp
 
 ```
 npm init
@@ -14,26 +11,37 @@ npm install gulp gulp-sass browser-sync run-sequence del gulp-newer gulp-sass gu
 
 * [x] Local Development
     * [x] [Browsersync](https://www.browsersync.io)
-* [ ] CSS
-    * [x] Vanilla CSS
+* [x] CSS
     * [x] [SASS](http://sass-lang.com/)
-    * [ ] [LESS](http://lesscss.org/)
     * [x] Minify
     * [x] Uglify
     * [x] Sourcemaps
-    * [ ] Preprocessors
+* [x] ENV
+* [x] Static Files
+    * [x] Other tasks to add a glob to the blacklist
+* [x] Command Line Prompt
+    * [x] ...with validation
 * [ ] Javascript
     * [ ] ESLint (Code Quality)
         * [ ] [AirBnB](https://github.com/airbnb/javascript)
         * [ ] Google
     * [ ] Babel
-* [ ] HTML
-    * [x] Vanilla HTML
-    * [ ] Preprocessors
-        * [ ] [Jade](http://jade-lang.com/)
-        * [ ] [HAML](http://haml.info/)
-        * [ ] [Slim](http://slim-lang.com/)
-        * [ ] [SSH](http://apps.domizai.ch/shh/)
-* [ ] Assets
-    * [ ] Everything not preprocessed
-* [ ] Documentation Generator
+* [ ] A good README
+    * See [Accredible Readme](https://github.com/accredible/accredible-frontend/blob/master/README.md)
+    * See [Google Web Starter Kit](https://github.com/google/web-starter-kit/)
+
+
+
+
+
+
+https://stackoverflow.com/a/9003363/1122851
+
+
+#### References
+
+* https://github.com/google/web-starter-kit/blob/master/gulpfile.babel.js#L86
+* https://www.sitepoint.com/simple-gulpy-workflow-sass/
+* https://www.freshconsulting.com/how-to-organize-your-gulp-js-development-builds-for-multiple-environments/
+* https://browsersync.io/docs/gulp
+* https://developers.google.com/web/tools/starter-kit/

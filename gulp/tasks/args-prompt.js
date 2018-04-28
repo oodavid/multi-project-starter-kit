@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var glob = require('glob');
 var prompt = require('gulp-prompt');
+var config = require('./config.js');
 
 
 gulp.task('args-task', function (done) {
@@ -21,8 +22,10 @@ gulp.task('args-task', function (done) {
           choices: tasks
         }],
         function(response){
-          global.config.task = response.task;
-      })
+          config.args.task = response.task;
+          config.args.taskPath = `./gulp/${response.task}.js`;
+        }
+      )
     );
 });
 
@@ -45,9 +48,10 @@ gulp.task('args-project', function (done) {
           choices: projects
         }],
         function(response){
-          global.config.cwd = './projects/'+response.project;
-          global.config.project = response.project;
-      })
+          config.args.project = response.project;
+          config.opts.cwd = './projects/'+response.project;
+        }
+      )
     );
 });
 
@@ -70,8 +74,10 @@ gulp.task('args-env', function (done) {
           choices: envs
         }],
         function(response){
-          global.config.env = response.env;
-      })
+          config.args.env = response.env;
+          config.args.envPath = `./env/${response.env}`;
+        }
+      )
     );
 });
 

@@ -1,7 +1,6 @@
 var gulp = require('gulp');
-
-
-require('./gulp/args/args.js');
+var config = require('./gulp/tasks/config.js');
+require('./gulp/tasks/args.js');
 
 
 dumpMessage(`
@@ -15,10 +14,10 @@ dumpMessage(`
 
 gulp.task('default', [ 'args' ], function (done) {
   // Start the selected task
-  require(`./gulp/${global.config.task}.js`);
+  require(config.args.taskPath);
   var runSequence = require('run-sequence');
   return runSequence(
-    global.config.task,
+    config.args.task,
     'joy',
     done
   );

@@ -1,12 +1,13 @@
 var gulp = require('gulp');
 var replace = require('gulp-replace');
 var package = require('../../package.json');
+var config = require('./config.js');
 
 
 gulp.task('env', function (done) {
   return gulp
-    .src(`./env/${global.config.env}/**/*`)
+    .src(`${config.args.envPath}/**/*`)
     .pipe(replace('||VERSION||', package.version))
-    .pipe(replace('||PRODUCT||', global.config.product))
-    .pipe(gulp.dest(`${global.config.cwd}/env`)); // NOT to the build directory!
+    .pipe(replace('||PRODUCT||', config.args.product))
+    .pipe(gulp.dest(`${config.opts.cwd}/env`)); // NOT to the build directory!
 });
