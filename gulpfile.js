@@ -6,7 +6,7 @@ require('./gulp/tasks/args.js');
 dumpMessage(`
 ∇   ____   ∇
 | :      : |  ·---------------------------- - -
-{| ♥    ♥ |}  | Multi-Project Build System
+{| ♥    ♥ |}  | Multi-Property Starter Kit
  |___==___|   |   oodavid 2018
 /          \\  ·---------------------------- - -
 `);

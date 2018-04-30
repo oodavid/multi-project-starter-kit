@@ -4,6 +4,13 @@ build/
 # Ignore the dynamic environment directory
 projects/*/env/
 
+# Ignore VScode settings
+.vscode
+
+# Sublime-github package stores a github token in this file
+# https://packagecontrol.io/packages/sublime-github
+GitHub.sublime-settings
+
 # Created by https://www.gitignore.io/api/sass,node
 
 ### Node ###

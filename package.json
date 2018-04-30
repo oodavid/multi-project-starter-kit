@@ -22,9 +22,12 @@
   "devDependencies": {
     "browser-sync": "^2.23.7",
     "del": "^3.0.0",
+    "eslint": "^4.19.1",
     "glob": "^7.1.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
+    "gulp-changed-in-place": "^2.3.0",
+    "gulp-eslint": "^4.0.2",
     "gulp-newer": "^1.4.0",
     "gulp-prompt": "^1.0.1",
     "gulp-replace": "^0.6.1",

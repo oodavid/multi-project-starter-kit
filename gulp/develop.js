@@ -6,6 +6,7 @@ require('./tasks/clean.js');
 require('./tasks/env.js');
 require('./tasks/sass.js');
 require('./tasks/static.js');
+require('./tasks/eslint.js');
 require('./tasks/browsersync.js');
 
 
@@ -15,7 +16,8 @@ gulp.task('develop', function (done) {
     'env',
     [
       'sass-watch',
-      'static-watch'
+      'static-watch',
+      'eslint-watch',
     ],
     'browsersync'
   );

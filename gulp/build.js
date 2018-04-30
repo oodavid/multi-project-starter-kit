@@ -14,7 +14,7 @@ gulp.task('build', function (done) {
     'env',
     [
       'sass-build',
-      'static-build'
+      'static-build',
     ],
     done
   );
