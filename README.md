@@ -10,7 +10,9 @@
 
 # Quick Start
 
-After cloning the repo, install dependencies
+[Download the starter kit](releases/latest) or clone the repository.
+
+Then install the dependencies:
 
 ```sh
 npm install --global gulp
@@ -20,7 +22,7 @@ npm install
 Now run `gulp` or `gulp --silent` to start developing
 
 <p align="center">
-  <img src="gulp/src/terminal.gif" alt="Demonstrating the Multi Project Starter Kit" width="550" height="458">
+  <img src="gulp/src/terminal.gif" alt="Demonstrating the Multi Project Starter Kit" width="550" height="443">
 </p>
 
 # Features
