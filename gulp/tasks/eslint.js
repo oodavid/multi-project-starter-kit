@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var eslint = require('gulp-eslint');
 var changedInPlace = require('gulp-changed-in-place');
 var config = require('./config.js');
+var handleErrors = require('./handleErrors.js');
 
 
 var src = '**/*.js';
@@ -12,8 +13,8 @@ var eslintOptions = { };
 gulp.task('eslint-build', function () {
   gulp
     .src(src, config.opts)
-    .pipe(eslint(eslintOptions))
-    .pipe(eslint.format());
+    .pipe(eslint(eslintOptions)).on('error', handleErrors)
+    .pipe(eslint.format()).on('error', handleErrors);
 });
 
 
@@ -28,7 +29,7 @@ gulp.task('eslint-watch-stream', createWatchStream);
 function createWatchStream(){
   gulp
     .src(src, config.opts)
-    .pipe(changedInPlace())
-    .pipe(eslint(eslintOptions))
-    .pipe(eslint.format());
+    .pipe(changedInPlace()).on('error', handleErrors)
+    .pipe(eslint(eslintOptions)).on('error', handleErrors)
+    .pipe(eslint.format()).on('error', handleErrors);
 }

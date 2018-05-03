@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="gulp/src/banner.png" alt="Multi-Project Starter Kit">
+  <img src="gulp/src/promo/banner.png" alt="Multi-Project Starter Kit">
   <br>
   <a href="https://github.com/oodavid/multi-project-starter-kit">Multi-Project Starter Kit</a> by <a href="https://github.com/oodavid">oodavid</a>.
 </p>
@@ -22,12 +22,12 @@ npm install
 Now run `gulp` or `gulp --silent` to start developing
 
 <p align="center">
-  <img src="gulp/src/terminal.gif" alt="Demonstrating the Multi Project Starter Kit" width="550" height="443">
+  <img src="gulp/src/promo/terminal.gif" alt="Demonstrating the Multi Project Starter Kit" width="550" height="443">
 </p>
 
 # Features
 
-## <img src="https://user-images.githubusercontent.com/46879/39443536-d7027898-4cac-11e8-9370-19377f9a5ceb.png" alt="gulp" width="24"> <img src="https://user-images.githubusercontent.com/46879/39443641-264241ea-4cad-11e8-820c-506b42fab90b.png" alt="magic" width="24"> Gulp + Magic
+## <img src="gulp/src/icons/gulp.png" alt="gulp" width="24"> <img src="gulp/src/icons/magic.png" alt="magic" width="24"> Gulp + Magic
 
 Just run `gulp` and be prompted for:
 
@@ -35,7 +35,14 @@ Just run `gulp` and be prompted for:
 * The environment from your `/env` directory - _production, sandbox, etc._
 * And the task to run - _develop, build, etc._
 
-## <img src="https://user-images.githubusercontent.com/46879/39443152-9abd172c-4cab-11e8-9f34-e32baa0cb1ca.png" alt="css" width="24"> <img src="https://user-images.githubusercontent.com/46879/39442963-fce263fe-4caa-11e8-8ce8-c3882964592d.png" alt="css" width="24"> CSS + SASS
+
+<p align="center">
+  <img src="gulp/src/promo/notification.png" alt="Error Notifications" width="366" height="85">
+  <br>
+  <em>Smart error handling and notifications</em>
+</p>
+
+## <img src="gulp/src/icons/css.png" alt="css" width="24"> <img src="gulp/src/icons/sass.png" alt="css" width="24"> CSS + SASS
 
 Works out of the box with:
 
@@ -43,7 +50,7 @@ Works out of the box with:
 * [Minify and Uglify](https://en.wikipedia.org/wiki/Minification_(programming))
 * [Sourcemaps](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)
 
-## <img src="https://user-images.githubusercontent.com/46879/39442453-1eddb5d2-4ca9-11e8-8a0d-4c8b25e8b230.png" alt="javascript" width="24"> <img src="https://user-images.githubusercontent.com/46879/39442598-b2fcd432-4ca9-11e8-9534-26144de59273.png" alt="eslint" width="24"> Javascript + ESLint
+## <img src="gulp/src/icons/javascript.png" alt="javascript" width="24"> <img src="gulp/src/icons/eslint.png" alt="eslint" width="24"> Javascript + ESLint
 
 Promote best practices and use the latest features
 
@@ -53,7 +60,7 @@ Promote best practices and use the latest features
 * ✋ [VSCode Extension](https://github.com/Microsoft/vscode-eslint)
 * ✋ [Sublime Plugin](https://github.com/SublimeLinter/SublimeLinter-eslint)
 
-## <img src="https://user-images.githubusercontent.com/46879/39467619-d5fe361a-4d26-11e8-9f7d-24223235f5ef.png" alt="HTML" width="24"> <img src="https://user-images.githubusercontent.com/46879/39442594-b121d784-4ca9-11e8-9e2a-f4f9b08dd50a.png" alt="browsersync" width="24"> HTML + BrowserSync
+## <img src="gulp/src/icons/html.png" alt="HTML" width="24"> <img src="gulp/src/icons/browsersync.png" alt="browsersync" width="24"> HTML + BrowserSync
 
 Local development with style and speed
 
@@ -93,7 +100,7 @@ When using the Multi-Project Starter Kit, you must include the following attribu
 
 <p align="center">
   <a href="https://github.com/oodavid/multi-project-starter-kit">
-    <img src="gulp/src/banner.png" alt="Multi-Project Starter Kit">
+    <img src="gulp/src/promo/banner.png" alt="Multi-Project Starter Kit">
   </a>
   <br>
   Built with the <a href="https://github.com/oodavid/multi-project-starter-kit">Multi-Project Starter Kit</a> by <a href="https://github.com/oodavid">oodavid</a>.

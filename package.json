@@ -34,6 +34,7 @@
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglifycss": "^1.0.9",
+    "node-notifier": "^5.2.1",
     "run-sequence": "^2.2.1",
     "yargs": "^11.0.0"
   }

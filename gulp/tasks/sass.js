@@ -5,11 +5,13 @@ var autoprefixer = require('gulp-autoprefixer');
 var uglify = require('gulp-uglifycss');
 var config = require('./config.js');
 var static = require('./static.js');
+var handleErrors = require('./handleErrors.js');
 
 
 
 var src = '**/*.scss';
 static.ignoreSrc(src); // Inform the static parser to ignore this src
+
 
 
 var autoprefixerOptions = {
@@ -28,9 +30,9 @@ gulp.task('sass-build', function () {
   return gulp
     .src(src, config.opts)
     // Transform
-    .pipe(sass(sassOptions).on('error', sass.logError))
-    .pipe(autoprefixer(autoprefixerOptions))
-    .pipe(uglify())
+    .pipe(sass(sassOptions)).on('error', handleErrors)
+    .pipe(autoprefixer(autoprefixerOptions)).on('error', handleErrors)
+    .pipe(uglify()).on('error', handleErrors)
     // Output
     .pipe(gulp.dest(config.dest));
 });
@@ -47,11 +49,11 @@ gulp.task('sass-watch-stream', getWatchStream);
 function getWatchStream(){
   return gulp
     .src(src, config.opts)
-    .pipe(sourcemaps.init())
+    .pipe(sourcemaps.init()).on('error', handleErrors)
     // Transform
-    .pipe(sass(sassOptions).on('error', sass.logError))
-    .pipe(autoprefixer(autoprefixerOptions))
+    .pipe(sass(sassOptions)).on('error', handleErrors)
+    .pipe(autoprefixer(autoprefixerOptions)).on('error', handleErrors)
     // Output
-    .pipe(sourcemaps.write('.'))
+    .pipe(sourcemaps.write('.')).on('error', handleErrors)
     .pipe(gulp.dest(config.dest));
 }

@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var newer = require('gulp-newer');
 var config = require('./config.js');
+var handleErrors = require('./handleErrors.js');
 
 
 var src = [ '**/*' ]; // Files handled by other tasks may be added to this. See: `ignoreSrc`
@@ -22,7 +23,7 @@ gulp.task('static-watch-stream', getWatchStream);
 function getWatchStream(){
   return gulp
     .src(src, config.opts)
-    .pipe(newer(config.dest))
+    .pipe(newer(config.dest)).on('error', handleErrors)
     .pipe(gulp.dest(config.dest));
 }
 
