@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  Develop multiple projects with a single task runner.
+  Develop multiple projects with a single task runner!
 </p>
 
 # Quick Start
